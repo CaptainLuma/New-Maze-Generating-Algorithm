@@ -2,7 +2,7 @@
 
 Check out this maze generating algorithm I came up with.
 
-Visit <a href="" target="_blank">this site</a> to try it out, or download the files and run "index.html"
+Visit <a href="https://captainluma.github.io/New-Maze-Generating-Algorithm/" target="_blank">this site</a> to try it out, or download the files and run "index.html"
 
 The algorithm goes as follows:
 
