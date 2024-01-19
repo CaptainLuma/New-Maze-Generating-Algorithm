@@ -13,5 +13,41 @@
 }
 
 body {
+    color: rgb(150, 150, 150);
     background-color: rgb(50, 50, 50);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+div {
+    gap: 20px;
+    display: flex;
+    margin-top: 10px;
+    display: block;
+}
+
+label {
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+input {
+    background-color: rgb(35, 35, 35);
+    border: none;
+    /* border: 1px solid rgb(150, 150, 150); */
+    border-radius: 4px;
+    width: 50px;
+    /* font-family: sans-serif; */
+    color: rgb(150, 150, 150);
+}
+
+button {
+    margin-left: 20px;
+    background-color: rgb(150, 150, 150);
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    outline: 1px solid rgb(150, 150, 150);
 }

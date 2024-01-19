@@ -22,7 +22,6 @@ class View {
         this.ctx.fillText('"i" key to iterate once', 10, 60);
         this.ctx.fillText('"a" key to toggle arrows', 10, 80);
         this.ctx.fillText('"o" key to toggle highlight origin', 10, 100);
-        this.ctx.fillText('modify width and height in "main.js"', 10, 120);
         this.ctx.fillText('"h" key to hide text', 10, 140);
     }
 

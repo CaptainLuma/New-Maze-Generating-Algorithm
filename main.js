@@ -4,8 +4,8 @@ Last Updated 1/12/2024
 */
 
 // global variables (feel free to edit these values)
-const mazeWidth = 10;
-const mazeHeight = 10;
+let mazeWidth = 10;
+let mazeHeight = 10;
 let algorithmIterations = mazeWidth * mazeHeight * 10; // how many iterations should be performed when running the algorithm
 let animationFPS = 24; // frames per second
 let drawArrow = false; // whether to show the direction of each node or not. Toggle with "a" key
@@ -138,6 +138,24 @@ document.addEventListener("keydown", function(event) {
             break;
     }
 });
+
+document.getElementById('apply').addEventListener('click', updateMazeDimensions);
+
+function updateMazeDimensions() {
+    // validate
+    try {
+        mazeWidth = parseInt(document.getElementById('width').value);
+        mazeHeight = parseInt(document.getElementById('height').value);
+
+        if (mazeWidth < 1 || mazeHeight < 1) throw new error("values can't be 0 or negative");
+    } catch {
+        mazeWidth = 10;
+        mazeHeight = 10;
+    }
+    
+    algorithmIterations = mazeWidth * mazeHeight * 10;
+    maze = new Maze(mazeWidth, mazeHeight);
+}
 
 // helpers
 function getRandomInt(min, max) {
